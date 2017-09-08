@@ -1,10 +1,15 @@
-name = '4. Find the number of elements of a list';
+const assert = require('assert');
 
-function myLength(list) {
+const name = '4. Find the length of a list';
+
+function length(list) {
     let length = 0;
     list.forEach(() => length += 1);
     return length;
 }
 
-assert(myLength(['a', 'b', 'c']) === 3, `${name} - 1`);
+assert(length(['a', 'b', 'c']) === 3, `${name} - 1`);
 
+module.exports = {
+    length,
+};

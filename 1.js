@@ -1,7 +1,14 @@
-name = '1. Find the last element of a list';
+const assert = require('assert');
 
-function myLast(list) {
+const name = '1. Find the last element of a list';
+
+function last(list) {
     return list[list.length - 1];
 }
 
-assert(myLast([1, 2, 3, 4]) === 4, name);
+assert(last([1, 2, 3, 4]) === 4, name);
+assert(last([1]) === 1, name);
+
+module.exports = {
+    last,
+};

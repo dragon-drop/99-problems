@@ -19,3 +19,8 @@ function pack(list) {
 }
 
 assert.deepEqual(pack(['a', 'a', 'a', 'b', 'b', 'c', 'a', 'a', 'd']), [['a', 'a', 'a'], ['b', 'b'], ['c'], ['a', 'a'], ['d']], `${name} - 1`);
+
+module.exports = {
+    pack,
+};
+

@@ -15,3 +15,7 @@ function compress(list) {
 }
 
 assert.deepEqual(compress(['a', 'a', 'a', 'b', 'b', 'c', 'a', 'a', 'd']), ['a', 'b', 'c', 'a', 'd'], `${name} - 1`);
+
+module.exports = {
+    compress,
+};
