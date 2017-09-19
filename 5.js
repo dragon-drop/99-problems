@@ -4,7 +4,10 @@ const name = '5. Reverse a list';
 
 function reverse(list) {
     let reversed = [];
-    list.forEach((item) => reversed.unshift(item));
+		let l = list.length;
+		while (l--) {
+			reversed.push(list[l]);
+		}
     return reversed;
 }
 
