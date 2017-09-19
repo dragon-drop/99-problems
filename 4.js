@@ -2,6 +2,7 @@ const assert = require('assert');
 
 const name = '4. Find the length of a list';
 
+// length :: [a] -> Int
 function length(list) {
     let length = 0;
     list.forEach(() => length += 1);

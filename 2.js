@@ -2,6 +2,7 @@ const assert = require('assert');
 
 const name = '2. Find the penultimate element of a list';
 
+// penultimate :: [a] -> a
 function penultimate(list) {
     if (list.length < 2) return 'Not long enough';
     return list[list.length - 2];
